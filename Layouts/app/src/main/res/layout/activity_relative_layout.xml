@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 1. Pegado arriba del todo pero con margen para que la barra no lo tape -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Título arriba (alignParentTop)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp" />
+
+    <!-- 2. Relativo al título: se pone DEBAJO -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Este texto está debajo del título (layout_below)"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="8dp" />
+
+    <!-- 3. Justo en el centro absoluto -->
+    <TextView
+        android:id="@+id/tvCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Centrado exacto (centerInParent)"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:background="#E0E0E0"
+        android:padding="16dp" />
+
+    <!-- 4. Pegado a la esquina inferior izquierda -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izquierda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- 5. Pegado a la esquina inferior derecha -->
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derecha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

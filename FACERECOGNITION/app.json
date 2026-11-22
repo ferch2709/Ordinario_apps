@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CamaraFacial",
+    "slug": "camara-facial",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.miapp.camarafacial",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permiso para acceder a la cámara."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permiso para acceder a la galería.",
+          "savePhotosPermission": "Permiso para guardar fotos en el carrete."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "31b4f7e2-6e64-4ffc-8323-eb44958bcf30"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:padding="16dp">
+
+    <!-- Fila 1: Encabezados -->
+    <TableRow
+        android:background="#CCCCCC"
+        android:padding="8dp">
+
+        <TextView
+            android:text="Producto"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Cantidad"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:text="Precio"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </TableRow>
+
+    <!-- Fila 2: Datos -->
+    <TableRow
+        android:padding="8dp">
+
+        <TextView
+            android:text="Teclado"
+            android:gravity="center" />
+
+        <TextView
+            android:text="2"
+            android:gravity="center" />
+
+        <TextView
+            android:text="$30.00"
+            android:gravity="center" />
+    </TableRow>
+
+    <!-- Fila 3: Datos -->
+    <TableRow
+        android:padding="8dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:text="Ratón"
+            android:gravity="center" />
+
+        <TextView
+            android:text="5"
+            android:gravity="center" />
+
+        <TextView
+            android:text="$15.00"
+            android:gravity="center" />
+    </TableRow>
+
+    <!-- Fila 4: Total que abarca columnas -->
+    <TableRow
+        android:padding="8dp"
+        android:background="#E0E0E0">
+
+        <TextView
+            android:layout_span="2"
+            android:text="Total:"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingEnd="12dp" />
+
+        <TextView
+            android:text="$135.00"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </TableRow>
+
+</TableLayout>

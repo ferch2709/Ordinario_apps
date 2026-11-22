@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EjemploAndroid</string>
+    <string name="txt_message">Este es mi primera app</string>
+    <string name="txt_boton1">Click on me</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="input_txt">input_txt\n</string>
+</resources>

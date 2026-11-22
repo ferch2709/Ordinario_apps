@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Capa 1: Fondo / Tarjeta base -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="#90CAF9" />
+
+    <!-- Capa 2: Texto encima del fondo, centrado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Capa Intermedia (Texto)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1" />
+
+    <!-- Capa 3: Etiqueta/Badge superpuesto en la esquina superior derecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:background="#E91E63"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:text="Badge / Nuevo" />
+
+    <!-- Capa 4: Botón flotante inferior -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Botón en la base" />
+
+</FrameLayout>
